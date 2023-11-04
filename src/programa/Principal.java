@@ -10,5 +10,7 @@ public class Principal {
         cachorro.movimentar();
         Cachorro segundo = new Cachorro("Baby");
         segundo.comer();
+        segundo.fazerBarulho();
+        segundo.movimentar();
     }
 }

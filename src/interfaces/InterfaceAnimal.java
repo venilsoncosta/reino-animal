@@ -7,4 +7,5 @@ public interface InterfaceAnimal {
     void movimentar();
 
     void fazerBarulho();
+
 }
