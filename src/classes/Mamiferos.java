@@ -1,6 +1,6 @@
 package classes;
 
-public abstract class Mamiferos extends ClasseAnimal{
+public abstract class Mamiferos extends Animal{
 
     public Mamiferos(String nome) {
         super(nome);

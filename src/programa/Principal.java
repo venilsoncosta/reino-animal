@@ -1,6 +1,6 @@
 package programa;
 
-import classes.Cachorro;
+import subclasses.Cachorro;
 
 public class Principal {
     public static void main(String[] args) {

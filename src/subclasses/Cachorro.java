@@ -1,4 +1,6 @@
-package classes;
+package subclasses;
+
+import classes.Mamiferos;
 
 public class Cachorro extends Mamiferos{
 

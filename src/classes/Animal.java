@@ -2,11 +2,11 @@ package classes;
 
 import interfaces.InterfaceAnimal;
 
-public abstract class ClasseAnimal implements InterfaceAnimal{
+public abstract class Animal implements InterfaceAnimal{
 
     protected String nome;
 
-    public ClasseAnimal(String nome) {
+    public Animal(String nome) {
         this.nome = nome;
     }
 
