@@ -1,14 +1,14 @@
 package mamiferos;
 
-import classes.Mamiferos;
+import classes.Animal;
 
-public class Leao extends Mamiferos{
+public class Leao extends Animal{
 
     private boolean comFome = true;
     private double peso = 300.0;
 
-    public Leao(String nome, String cor) {
-        super(nome, cor);
+    public Leao(String nome, String cor, String especie) {
+        super(nome, cor, especie);
     }
 
     public void comer(Zebra zebra){

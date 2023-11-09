@@ -2,14 +2,14 @@ package mamiferos;
 
 import java.util.Scanner;
 
-import classes.Mamiferos;
+import classes.Animal;
 
-public class Zebra extends Mamiferos{
+public class Zebra extends Animal{
 
     private Double peso = 300.0;
 
-    public Zebra(String nome, String cor) {
-        super(nome, cor);
+    public Zebra(String nome, String cor, String especie) {
+        super(nome, cor, especie);
     }
 
     public void comer() {

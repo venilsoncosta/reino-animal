@@ -3,13 +3,15 @@ package classes;
 public abstract class Animal {
     protected String nome;
     protected String cor;
+    protected String especie;
     
     public Animal() {
     }
 
-    public Animal(String nome, String cor) {
+    public Animal(String nome, String cor, String especie) {
         this.nome = nome;
         this.cor = cor;
+        this.especie = especie;
     }
 
     public abstract void movimentar();
@@ -33,5 +35,10 @@ public abstract class Animal {
         this.cor = cor;
     }
 
+    public String getEspecie() {
+        return especie;
+    }
+
+    
     
 }
