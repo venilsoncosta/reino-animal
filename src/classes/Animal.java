@@ -14,6 +14,8 @@ public abstract class Animal {
         this.especie = especie;
     }
 
+    public abstract void comer();
+
 //abaixo disso aqui estão os getters e setters
     public String getNome() {
         return nome;
