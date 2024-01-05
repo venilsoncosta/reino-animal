@@ -14,10 +14,6 @@ public abstract class Animal {
         this.especie = especie;
     }
 
-    public abstract void movimentar();
-
-    public abstract void fazerSom();
-
 //abaixo disso aqui estão os getters e setters
     public String getNome() {
         return nome;
