@@ -12,5 +12,8 @@ public class Elefante extends Animal {
         System.out.println("Elefante comendo");
     }
 
-
+    @Override
+    public String toString() {
+        return "Elefante: " + " Nome: " + getNome() + "| Espécie: " + getEspecie();
+    }
 }

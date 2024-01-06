@@ -16,7 +16,11 @@ public abstract class Animal {
 
     public abstract void comer();
 
-//abaixo disso aqui estão os getters e setters
+
+    @Override
+    public abstract String toString();
+
+    //abaixo disso aqui estão os getters e setters
     public String getNome() {
         return nome;
     }
