@@ -1,7 +1,7 @@
 package programa;
 
 import animais.Elefante;
-import interfaces.Animal;
+import interfaces.InterfaceAnimal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Zoologico {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        List<Animal> zoo = new ArrayList<>();
+        List<InterfaceAnimal> zoo = new ArrayList<>();
         //Elefante elefante001 = new Elefante("Dumbo", "marrom", "africano", "mato");
 
         for(int i = 0; i < 3; i++){
@@ -22,7 +22,7 @@ public class Zoologico {
             String especie = entrada.nextLine();
             System.out.println("Digite a comida que esse animal come: ");
             String comida = entrada.nextLine();
-            zoo.add(new Elefante(nome, cor, especie, comida));
+            zoo.add(new Elefante(nome, especie, cor, comida));
         }
 //        zoo.add(elefante001);
         zoo.forEach(System.out::println);

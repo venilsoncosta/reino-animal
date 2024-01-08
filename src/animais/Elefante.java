@@ -1,21 +1,11 @@
 package animais;
 
-import interfaces.Animal;
+import interfaces.InterfaceAnimal;
+import interfaces.ClasseAnimal;
 
-public class Elefante implements Animal {
-    private String nome;
-    private String cor;
-    private String especie;
-    private String comida;
-
-    public Elefante() {
-    }
-
-    public Elefante(String nome, String cor, String especie, String comida) {
-        this.nome = nome;
-        this.cor = cor;
-        this.especie = especie;
-        this.comida = comida;
+public class Elefante extends ClasseAnimal implements InterfaceAnimal {
+    public Elefante(String nome, String especie, String cor, String comida) {
+        super(nome, especie, cor, comida);
     }
 
     @Override
@@ -33,35 +23,5 @@ public class Elefante implements Animal {
         return "Elefante: " + " Nome: " + getNome() + "| Espécie: " + getEspecie();
     }
 
-    public String getNome() {
-        return nome;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public String getEspecie() {
-        return especie;
-    }
-
-    public void setEspecie(String especie) {
-        this.especie = especie;
-    }
-
-    public String getComida() {
-        return comida;
-    }
-
-    public void setComida(String comida) {
-        this.comida = comida;
-    }
 }
